@@ -1,0 +1,11 @@
+# Copy this file to terraform.tfvars and fill in your own values.
+# terraform.tfvars is gitignored — never commit it, since it may contain
+# your real IP address and key pair name.
+
+aws_region          = "ap-southeast-1"
+instance_type       = "t2.micro"
+ebs_volume_size_gb  = 20
+siem_platform       = "wazuh" # or "elk" — see the pending SIEM platform ADR
+my_ip_cidr          = "REPLACE_WITH_YOUR_IP/32" # get it from https://checkip.amazonaws.com
+key_pair_name       = "siem-practice"
+project_tag         = "cyberstorm-siem-practice"
