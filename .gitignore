@@ -1,0 +1,17 @@
+# Terraform/OpenTofu state — never commit, may contain sensitive data
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+
+# Real variable values — contains your actual IP, key name, etc.
+terraform.tfvars
+*.auto.tfvars
+
+# Local provider plugin cache
+.terraform/
+
+# SSH keys if ever generated/downloaded into this folder
+*.pem
+
+# OS/editor cruft
+.DS_Store
